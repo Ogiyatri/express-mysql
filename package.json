@@ -1,0 +1,15 @@
+{
+  "name": "express-mysql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ogi Yatri Malakiano",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

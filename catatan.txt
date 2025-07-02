@@ -1,0 +1,14 @@
+// inisialisasi project
+yarn init
+
+yarn add express nodemon
+
+routes => routing /user /product
+controller => fungsi yang digunakan pada setiap routes
+middleware =>
+models => untuk menyimpan fungsi2 call ke database
+config => untuk menyimpan konfigurasi set up database
+
+// middleware
+- sebuah fungsi yang bisa akses request dan response sehingga bisa menjalankan fungsi yang diinginkan 
+- penghubung antara request dan response
