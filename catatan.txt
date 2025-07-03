@@ -15,3 +15,6 @@ config => untuk menyimpan konfigurasi set up database
 
 
 setelah dependeencies selesai diinstall, connect ke database
+
+
+untuk melakukan proses upload file, install module multer
