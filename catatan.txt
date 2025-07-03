@@ -12,3 +12,6 @@ config => untuk menyimpan konfigurasi set up database
 // middleware
 - sebuah fungsi yang bisa akses request dan response sehingga bisa menjalankan fungsi yang diinginkan 
 - penghubung antara request dan response
+
+
+setelah dependeencies selesai diinstall, connect ke database

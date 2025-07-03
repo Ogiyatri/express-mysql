@@ -1,14 +1,22 @@
-const getAllUsers = (req, res) => {
-    const data = {
-        id: "1",
-        nama: "Malakiano",
-        umur: 20,
-        pekerjaan: "Programmer",
-    }
+// pemanggilan dari model
+
+const usersModel = require("../models/users");
+
+const getAllUsers = async (req, res) => {
+  // koneksi database gunakan try catch untuk menangani error
+  try {
+    const [data] = await usersModel.getAllUsers();
   res.json({
     message: "Daftar semua pengguna",
     data: data,
   });
+
+  } catch (error) {
+    res.status(500).json({
+      message: "Server error",
+      serverMessage: error,
+    })
+  }
 };
 
 const createNewUser = (req, res) => {
